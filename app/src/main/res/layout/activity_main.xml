@@ -65,26 +65,27 @@
 
 
         <RadioGroup
+            android:id="@+id/radioGroupDiffLevel"
             android:layout_width="match_parent"
             android:layout_height="51dp"
             android:orientation="horizontal">
 
             <RadioButton
-                android:id="@+id/radioButton1"
+                android:id="@+id/radioButtonEasy"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Easy" />
 
             <RadioButton
-                android:id="@+id/radioButton2"
+                android:id="@+id/radioButtonMedium"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Medium" />
 
             <RadioButton
-                android:id="@+id/radioButton3"
+                android:id="@+id/radioButtonHard"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -96,8 +97,9 @@
             android:id="@+id/button3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Save"
-            android:layout_gravity="center"/>
+            android:layout_gravity="center"
+            android:onClick="doSave"
+            android:text="Save" />
 
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>
